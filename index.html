@@ -53,6 +53,17 @@
 			font-size:15px;
 			font-style: italic
 		}
+		a{
+			display:inline-block;
+			text-decoration: none;
+			transition: transform .4s ease-in-out;
+		}
+		a:hover {
+		  transform: rotate(360deg);
+		}
+		a,#clock{
+			color: #efefef;
+		}
 		#clock{
 			
 			top:0;
@@ -68,9 +79,10 @@
 			
 			text-align: center;
 			font-size: 5em;
-			color: #efefef
+			
 		}
 	</style>
+	<base target="_blank">
   </head>
 
   <body>
@@ -80,7 +92,7 @@
 	<div id="clock">
 		<div>
 		<span id="hours"></span>
-		<span id="dotdot">:</span>
+		<a href="https://yzahk.in" id="dotdot">:</a>
 		<span id="minutes"></span>
 		</div>
 	</div>
