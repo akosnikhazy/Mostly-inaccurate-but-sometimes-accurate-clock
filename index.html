@@ -13,33 +13,48 @@
 		body {
 			height: 100%;
 			margin:0;
-			padding:0;
+			padding:0
 		}
 		body{
 			background: rgb(2,0,36);
-			background: linear-gradient(180deg, rgba(2,0,36,1) 12%, rgba(43,95,150,1) 24%);
+			background: linear-gradient(180deg, rgba(2,0,36,1) 12%, rgba(43,95,150,1) 24%)
 		}
 		h1,
 		h2{
 			text-align:center;
 			margin:0;
-			padding:0;
+			padding:0
+			
+		}
+		h1,
+		h2,
+		h3{
+			color:#b0cf02
 		}
 		h1{
 			
 			font-family: "arial";
 			font-weight: 777;
 			text-align:center;
-			color: #b0cf02;
 			
-			margin-bottom: 20px;
+			
+			margin-bottom: 20px
 		}
 		h2{
 			
-			color:#b0cf02;
+			
+		}
+		h3,#clock{
+			position: fixed;
+			bottom:2px;
+			left: 2px
+		}
+		h3{
+			font-size:15px;
+			font-style: italic
 		}
 		#clock{
-			position: fixed;
+			
 			top:0;
 			left:0;
 			z-index:50;
@@ -53,7 +68,7 @@
 			
 			text-align: center;
 			font-size: 5em;
-			color: #efefef;
+			color: #efefef
 		}
 	</style>
   </head>
@@ -61,6 +76,7 @@
   <body>
 	<h1>Mostly Inaccurate, But Sometimes Accurate Clock</h1>
 	<h2>A fun game for the whole family! Refresh to get a new time! Look at the clock on your device! If it is the same, you have won!</h2>
+	<h3>(Remember! Leaving the page at a time and waiting for the real clock to get there is cheating!)</h3>
 	<div id="clock">
 		<div>
 		<span id="hours"></span>
